@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'SFProText';
+  src: url(../fonts/SFProText-Regular.woff2) format('woff2'),
+       url(../fonts/SFProText-Regular.otf) format('otf');
+  font-weight: normal;     
+}
+
+@font-face {
+  font-family: 'SFProText';
+  src: url(../fonts/SFProText-Medium.woff2) format('woff2'),
+       url(../fonts/SFProText-Medium.otf) format('otf');
+  font-weight: 500;     
+}
+
+@font-face {
+  font-family: 'SFProText';
+  src: url(../fonts/SFProText-Semibold.woff2) format('woff2'),
+       url(../fonts/SFProText-Semibold.otf) format('otf');
+  font-weight: 600;     
+}
+
+@font-face {
+  font-family: 'SFProText';
+  src: url(../fonts/SFProText-Bold.woff2) format('woff2'),
+       url(../fonts/SFProText-Bold.otf) format('otf');
+  font-weight: 700;     
+}
