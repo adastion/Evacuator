@@ -1,4 +1,11 @@
 @import "src/styles/fonts.css";
+@import "src/styles/wrapper.css";
+@import "src/styles/container.css";
+@import "src/styles/logo.css";
+@import "src/styles/buttons.css";
+@import "src/styles/header.css";
+@import "src/styles/navigation.css";
+@import "src/styles/content.css";
 
 *,
 *::before,
@@ -8,7 +15,20 @@
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: "SFProText", "Courier New", Courier, monospace;
   font-size: 26px;
+}
+
+ul,ol[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
 }

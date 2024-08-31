@@ -1,0 +1,10 @@
+.header {
+}
+.header__inner {
+  padding: 0 100px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+.header__banner {
+}

@@ -1,23 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Evacuator</title>
 </head>
+
 <body>
   <div class="wrapper">
-    <header>
-      <div class="logo"><img src="src/images/icons/logo.svg" alt="logo"></div>
-      <ul class="navigation">
-        <li class="navigation__item"><a href="#">о проекте</a></li>
-        <li class="navigation__item"><a href="#">контакты</a></li>
-      </ul>
-      <button class="btn">Добавить объявление</button>
+    <header class="header">
+      <div class="header__inner">
+        <div class="logo">
+          <a href="#">
+            <img src="src/images/icons/logo.svg" alt="logo">
+        </div>
+        </a>
+        <ul class="navigation">
+          <li class="navigation__item"><a href="#">о проекте</a></li>
+          <li class="navigation__item"><a href="#">контакты</a></li>
+          <li class="navigation__item">
+            <button class="btn">Добавить объявление</button>
+          </li>
+        </ul>
+      </div>
+      <div class="header__banner container">
+        <h1 class="title">Телефоны для вызова эвакуатора в <a href="#" class="location">Москве</a></h1>
+      </div>
     </header>
-    <footer>footer</footer>
+    <section class="content container">
+      <ul class="product">
+        <li class="product__card">
+          <h2 class="pruduct__title">Эвакуатор</h2>
+          <section class="product__content">
+            <div class="product__images">
+              <img src="" alt="preview">
+            </div>
+            <ul class="product__prices">
+              <li class="product__prices-item">
+                <h3 class="product__prices-name">Легковой автомобиль</h3><span class="product__price">5 000 руб</span>
+              </li>
+              <li class="product__prices-item">
+                <h3 class="product__prices-name">Мотоцикл (крадроцикл и т.д.)</h3><span class="product__price">3 000
+                  руб</span>
+              </li>
+              <li class="product__prices-item">
+                <h3 class="product__prices-name">Внедорожник</h3><span class="product__price">нет</span>
+              </li>
+              <li class="product__prices-item">
+                <h3 class="product__prices-name">Микроавтобус</h3><span class="product__price">нет</span>
+              </li>
+              <li class="product__prices-item">
+                <h3 class="product__prices-name">Загородный тариф</h3><span class="product__price">50 руб/км</span>
+              </li>
+            </ul>
+            <address class="product__contacts">
+              <a class="btn btn--mobile" href="tel:+79999999">
+                <svg width="15" height="20" viewBox="0 0 15 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M2.77198 0.439054L3.84898 0.0950539C4.85698 -0.226946 5.93498 0.294054 6.36698 1.31205L7.22698 3.34005C7.60198 4.22305 7.39398 5.26205 6.71298 5.90805L4.81998 7.70605C4.93665 8.78205 5.29798 9.84105 5.90398 10.8831C6.48025 11.8909 7.25242 12.7732 8.17498 13.4781L10.451 12.7181C11.313 12.4311 12.252 12.7621 12.781 13.5391L14.013 15.3491C14.629 16.2531 14.518 17.4991 13.755 18.2651L12.937 19.0861C12.123 19.9031 10.961 20.2001 9.88498 19.8641C7.34631 19.0721 5.01198 16.7211 2.88198 12.8111C0.749313 8.89439 -0.00335383 5.57172 0.62398 2.84305C0.88798 1.69505 1.70598 0.780054 2.77398 0.439054"
+                    fill="currentColor" />
+                </svg>
+                <span>+7 999 99 99</span>
+              </a>
+              <a class="btn btn--mobile" href="tel:+79999999">
+                <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20.7072 12.7036C20.592 11.9032 19.974 11.2792 19.1784 11.0932C16.086 10.3684 15.3108 8.58759 15.18 6.61239C14.6316 6.51039 13.656 6.39999 12 6.39999C10.344 6.39999 9.36837 6.51039 8.81997 6.61239C8.68917 8.58759 7.91397 10.3684 4.82157 11.0932C4.02597 11.2804 3.40797 11.9032 3.29277 12.7036L2.69637 16.834C2.48637 18.2884 3.55437 19.6 5.03997 19.6H18.96C20.4444 19.6 21.5136 18.2884 21.3036 16.834L20.7072 12.7036ZM12 16.5904C10.326 16.5904 8.96877 15.2464 8.96877 13.5904C8.96877 11.9344 10.326 10.5904 12 10.5904C13.674 10.5904 15.0312 11.9344 15.0312 13.5904C15.0312 15.2464 13.6728 16.5904 12 16.5904ZM23.94 5.19999C23.9112 3.39999 19.3296 0.401194 12 0.399994C4.66917 0.401194 0.0875734 3.39999 0.0599734 5.19999C0.0323734 6.99999 0.0851734 9.34239 3.10197 8.95239C6.63117 8.49519 6.41397 7.26279 6.41397 5.50119C6.41397 4.27239 9.28437 3.97599 12 3.97599C14.7156 3.97599 17.5848 4.27239 17.586 5.50119C17.586 7.26279 17.3688 8.49519 20.898 8.95239C23.9136 9.34239 23.9676 6.99999 23.94 5.19999Z"
+                    fill="currentColor" />
+                </svg>
+                <span>+7 999 99 99</span>
+              </a>
+              <div class="product__location">
+                <div class="product__inner">
+                  <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M7.262 20.634C7.262 20.634 0 14.518 0 8.5C0 6.37827 0.842855 4.34344 2.34315 2.84315C3.84344 1.34285 5.87827 0.5 8 0.5C10.1217 0.5 12.1566 1.34285 13.6569 2.84315C15.1571 4.34344 16 6.37827 16 8.5C16 14.518 8.738 20.634 8.738 20.634C8.334 21.006 7.669 21.002 7.262 20.634ZM8 12C8.45963 12 8.91475 11.9095 9.33939 11.7336C9.76403 11.5577 10.1499 11.2999 10.4749 10.9749C10.7999 10.6499 11.0577 10.264 11.2336 9.83939C11.4095 9.41475 11.5 8.95963 11.5 8.5C11.5 8.04037 11.4095 7.58525 11.2336 7.16061C11.0577 6.73597 10.7999 6.35013 10.4749 6.02513C10.1499 5.70012 9.76403 5.44231 9.33939 5.26642C8.91475 5.09053 8.45963 5 8 5C7.07174 5 6.1815 5.36875 5.52513 6.02513C4.86875 6.6815 4.5 7.57174 4.5 8.5C4.5 9.42826 4.86875 10.3185 5.52513 10.9749C6.1815 11.6313 7.07174 12 8 12Z"
+                      fill="currentColor" />
+                  </svg>
+                  <span>Место стоянки</span>
+                  <p>Москва, ул Пушкина</p>
+                </div>
+              </div>
+              <div class="product__advertising">
+                <span>ID объявления <span>63</span></span>
+                <a href="#">Заказать рекламу</a>
+              </div>
+            </address>
+          </section>
+          <div class="product__message"><span>Эвакуатор авто. Всегда на связи! Быстро и надежно</span></div>
+        </li>
+      </ul>
+    </section>
+    <footer class="footer container">footer</footer>
   </div>
   <script src="index.html"></script>
 </body>
+
 </html>
