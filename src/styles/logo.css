@@ -2,3 +2,9 @@
   max-width: 120px;
   margin-right: auto;
 }
+
+@media (max-width: 1200px) {
+  .logo {
+    margin-right: 15px;
+  } 
+}

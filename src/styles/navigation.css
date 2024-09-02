@@ -1,13 +1,34 @@
 .navigation {
   display: flex;
-  gap: 78px;
+  flex-wrap: wrap;
+  gap: 20px 78px;
   text-transform: uppercase;
   font-size: 20px;
   align-items: center;
+  justify-content: center;
 }
 .navigation__item {
   & a {
     text-decoration: none;
     color: #131515;
+  }
+}
+
+.navigation--secondary {
+  justify-content: space-between;
+  text-transform: lowercase;
+
+  & .navigation__item {
+    & a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .navigation {
+    margin-bottom: 30px;
   }
 }

@@ -1,0 +1,14 @@
+.footer {
+  background-color: #586c75;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  & .logo {
+    margin: 10px;
+  }
+}
+

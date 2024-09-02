@@ -1,0 +1,48 @@
+.banner {
+  background: #586c75 url("../images/bg.webp");
+  background-size: contain;
+}
+
+.banner > .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  padding: 36px 0;
+}
+
+.banner--primary > .container {
+  gap: 8px;
+
+  & a {
+    font-size: 50px;
+  }
+}
+
+.banner--secondary > .container {
+  gap: 20px;
+  justify-content: space-between;
+
+  & :nth-child(2) {
+    position: relative;
+  }
+}
+
+.banner__icon {
+  max-height: 90px;
+  overflow: hidden;
+
+  & img {
+    max-width: 182px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1400px) {
+  .banner--secondary > .container {
+    gap: 16px;
+    justify-content: center;
+  }
+}

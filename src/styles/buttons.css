@@ -2,6 +2,7 @@
   background: none;
   border: none;
   text-transform: uppercase;
+  font-family: inherit;
   font-size: 20px;
   font-weight: 600;
   display: flex;
@@ -12,8 +13,8 @@
   background-color: #0297d4;
   color: white;
   text-decoration: none;
-  font-style: normal;
   cursor: pointer;
+  text-align: center;
 }
 .btn--mobile {
   gap: 8px;

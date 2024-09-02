@@ -4,11 +4,13 @@
 @import "src/styles/logo.css";
 @import "src/styles/buttons.css";
 @import "src/styles/title.css";
+@import "src/styles/banner.css";
 @import "src/styles/header.css";
 @import "src/styles/navigation.css";
 @import "src/styles/pagination.css";
 @import "src/styles/content.css";
 @import "src/styles/product.css";
+@import "src/styles/footer.css";
 
 *,
 *::before,

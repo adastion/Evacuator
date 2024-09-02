@@ -7,13 +7,6 @@
   background-color: white;
   display: flex;
   align-items: center;
-}
-
-.header__banner {
-  text-align: center;
-  padding: 36px;
-  background: gray url("../images/bg.webp");
-  background-size: contain;
-  color: white;
-  font-weight: 700;
+  justify-content: center;
+  flex-wrap: wrap;
 }
