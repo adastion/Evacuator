@@ -1,0 +1,57 @@
+.card-aspect {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.card-aspect__item {
+  position: relative;
+}
+
+.card-aspect__item,
+.card-aspect__content {
+  display: grid;
+  justify-items: center;
+}
+
+.card-aspect__icon {
+  position: absolute;
+  background-color: #0297d4;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  & img {
+    display: flex;
+    margin-top: 16px;
+    z-index: 2;
+  }
+}
+
+.card-aspect__content {
+  background-color: #0297d4;
+  border-radius: 20px;
+  padding: 36px 20px 28px;
+  color: white;
+  margin-top: 74px;
+  z-index: 1;
+  text-align: center;
+}
+
+.card-aspect__title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+
+  & + * {
+    margin-top: 18px;
+  }
+}
+
+.card-aspect__text {
+  font-size: 18px;
+}

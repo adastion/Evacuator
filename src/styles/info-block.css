@@ -1,0 +1,28 @@
+.info-block {
+  padding: 100px 0;
+}
+.info-block__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 42px;
+}
+.info-block__inner {
+}
+
+.info-block__text {
+
+  & + * {
+    margin-top: 32px;
+  }
+}
+
+.info-block__text--bold {
+  display: inline-block;
+  margin-top: 32px;
+}
+
+.info-block__image {
+  & + * {
+    margin-top: 32px;
+  }
+}

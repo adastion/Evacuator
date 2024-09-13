@@ -10,6 +10,8 @@
 @import "src/styles/pagination.css";
 @import "src/styles/content.css";
 @import "src/styles/product.css";
+@import "src/styles/info-block.css";
+@import "src/styles/card-aspect.css";
 @import "src/styles/footer.css";
 
 *,

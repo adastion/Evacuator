@@ -15,6 +15,15 @@
   text-decoration: none;
   cursor: pointer;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    background-color: aqua;
+  }
 }
 .btn--mobile {
   gap: 8px;
