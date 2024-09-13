@@ -10,7 +10,7 @@
 .title--secondary {
   font-size: 40px;
 
-  & + * {
+  & + :not(.btn) {
     margin-top: 48px;
   }
 }

@@ -14,7 +14,7 @@
 }
 
 .banner--primary > .container {
-  gap: 8px;
+  gap: 25px;
 
   & a {
     font-size: 50px;
