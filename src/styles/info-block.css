@@ -43,10 +43,10 @@
 
 .info-block__image--small {
   display: grid;
-  max-height: 398px;
+  max-height: 289px;
 
   & img {
-    height: 398px;
+    height: 289px;
     object-fit: contain;
     object-position: center;
   }
