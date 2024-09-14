@@ -5,6 +5,8 @@
 @import "src/styles/buttons.css";
 @import "src/styles/title.css";
 @import "src/styles/banner.css";
+@import "src/styles/bulleted-list.css";
+
 @import "src/styles/header.css";
 @import "src/styles/navigation.css";
 @import "src/styles/pagination.css";

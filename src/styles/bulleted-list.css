@@ -1,0 +1,19 @@
+.bulleted-list {
+  display: grid;
+  gap: 32px;
+}
+
+.bulleted-list__item {
+  position: relative;
+  margin-left: 50px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/icons/ok.svg");
+    background-repeat: no-repeat;
+    left: -50px;
+  }
+}
