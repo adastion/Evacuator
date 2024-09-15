@@ -10,10 +10,24 @@
   background-color: #fff5cc;
 }
 
+.info-block--position {
+  margin-bottom: 170px;
+  padding-bottom: 530px;
+
+  & .container {
+    position: relative;
+  }
+}
+
 .info-block__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 42px;
+}
+
+.info-block__wrapper--secondary {
+  position: absolute;
+  bottom: -700px;
 }
 
 .info-block__inner {
@@ -49,5 +63,15 @@
     height: 289px;
     object-fit: contain;
     object-position: center;
+  }
+}
+
+.info-block__article {
+  padding: 48px;
+  border-radius: 20px;
+  background-color: #fff5cc;
+
+  & .title {
+    font-size: 26px;
   }
 }

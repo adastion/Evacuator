@@ -13,7 +13,10 @@
   color: #0297d4;
   overflow: hidden;
 
-  & a {
+  & a,
+  & button {
+    background: none;
+    border: none;
     width: 52px;
     height: 52px;
     display: flex;
@@ -22,17 +25,25 @@
     text-decoration: none;
     color: inherit;
     transition: all 0.3s ease-in-out;
+    
   }
 
-  & a:hover {
+  & a:hover,
+  & button:hover {
     opacity: 0.6;
     color: white;
     background-color: #0297d4;
+    cursor: pointer;
   }
 }
 
+.pagination__item--back {
+  transform: rotate(180deg);
+}
+
 .pagination__item--active {
-  & a {
+  & a,
+  & button {
     width: 52px;
     height: 52px;
     display: flex;
@@ -43,7 +54,8 @@
     background-color: #0297d4;
   }
 
-  & a:hover {
+  & a:hover,
+  & button:hover {
     opacity: 1;
     color: white;
     background-color: #0297d4;
